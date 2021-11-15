@@ -11498,6 +11498,14 @@ html {
     font-size: 3rem;
     line-height: 2.5rem;
   }
+
+  
+}
+
+@media (min-width: 320px){
+  .education-card{
+    width: 80%;
+  }
 }
 
 .footer {
@@ -11511,54 +11519,51 @@ html {
   background-color: #1a252f;
 }
 /* Education */
+#education{
+  background-color: var(--bs-gray-800);
+}
+
 .education-container{
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
-  
+  flex-wrap: wrap;  
 }
 
-.education-card{
-  
-  width: 40%;
+.education-card{ 
+  width: 48%;
   margin: 0 auto;
   align-content: center;
-  background-color: #343a40;
-  border-radius: 8px;
+  background-color: #2c3e50;
+  border-radius: 12px;
   margin: 50px auto;
+
 }
 
 .education-card img{
-  display: inline-block; 
-
-
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .education-card .education-card--year{
   text-align: center;
-  margin-top: -10px;
+  color: #FFFFFF;
 }
 
 .education-card .education-card--title{
   margin-top: -5px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .education-card .education-card--description{
   text-align: center;
-  margin-top: -10px;
   padding-bottom: 40px;
+  color: #FFFFFF;
 }
-
-
-
-
-
-
-
 
 /* skills */
 
@@ -11581,7 +11586,8 @@ html {
   height: auto;
   display: flex;
   flex-direction: row;
- margin: 0 auto;
+  margin: 0 auto;
+ 
 }
 
 .mh-skills .mh-professional-skill{
@@ -11725,7 +11731,7 @@ html {
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
-   background:#66bdd1;
+   background:#087990;
    transition: 3s all;
    animation-duration: 3s;
    animation-name: animationProgress;
@@ -11734,10 +11740,15 @@ html {
 .precentual{
   animation-name: animationProgress;
 }
+
+
+
+/* Contact-me */
 .container-contact{
   width: 70%;
   margin: 0 auto;
   display: flex;
+  gap: 10px;
   flex-direction: row;
   background-color: #343a40;
  
@@ -11752,9 +11763,8 @@ html {
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  /* padding:10px; */
   text-align: center;
-  border-radius: 8px;
+  border-radius: 12px;
   color: white;
   background-color:#2c3e50 ;
   transition: 0.3s;
